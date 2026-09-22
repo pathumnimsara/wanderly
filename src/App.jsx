@@ -1,5 +1,8 @@
 import "./App.css";
 
+import Destinations from "./components/Destinations";
+
+
 function App() {
   return (
     <div className="page">
@@ -31,6 +34,8 @@ function App() {
           <button>Explore destinations →</button>
         </div>
       </section>
+
+     <Destinations /> 
     </div>
   );
 }
