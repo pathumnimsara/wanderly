@@ -98,9 +98,19 @@ button {
   font-size: 14px;
   cursor: pointer;
 }
+button {
+  transition:
+    transform 0.3s ease,
+    background 0.3s ease,
+    color 0.3s ease;
+}
 
 button:hover {
-  transform: translateY(-2px);
+  transform: translateY(-3px);
+}
+
+button:hover {
+  transform: translateY(-3px);
 }
 
 .destinations-section {
@@ -391,5 +401,106 @@ button:hover {
 
   .card-content h3 {
     font-size: 42px;
+  }
+}
+
+/* 
+   ABOUT SECTION
+ */
+
+.about-section {
+  background: #050505;
+  padding: 160px 5%;
+  border-top: 1px solid #1a1a1a;
+}
+
+.about-label {
+  color: #777;
+  font-size: 11px;
+  letter-spacing: 3px;
+  margin-bottom: 60px;
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: 1.3fr 0.7fr;
+  gap: 80px;
+  align-items: end;
+}
+
+.about-content h2 {
+  font-size: clamp(55px, 8vw, 115px);
+  line-height: 0.9;
+  letter-spacing: -5px;
+  font-weight: 500;
+}
+
+.about-content h2 span {
+  color: #555;
+}
+
+.about-content p {
+  max-width: 400px;
+  color: #888;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+
+/* 
+   FOOTER
+ */
+
+footer {
+  background: #050505;
+  padding: 50px 5%;
+  border-top: 1px solid #1a1a1a;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-logo {
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 4px;
+}
+
+.footer-text {
+  color: #666;
+  font-size: 12px;
+}
+
+
+/* 
+   MOBILE
+ */
+
+@media (max-width: 700px) {
+  .about-section {
+    padding: 100px 20px;
+  }
+
+  .about-label {
+    margin-bottom: 40px;
+  }
+
+  .about-content {
+    display: block;
+  }
+
+  .about-content h2 {
+    font-size: clamp(50px, 15vw, 75px);
+    letter-spacing: -3px;
+  }
+
+  .about-content p {
+    margin-top: 40px;
+    font-size: 13px;
+  }
+
+  footer {
+    padding: 35px 20px;
   }
 }
