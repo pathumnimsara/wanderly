@@ -1,51 +1,41 @@
 import "./App.css";
+import { Routes, Route } from "react-router-dom";
 
-import About from "./components/About";
-import Destinations from "./components/Destinations";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import DestinationDetails from "./pages/DestinationDetails";
+import ExperienceDetails from "./pages/ExperienceDetails";
 
+import Home from "./pages/Home";
+import Destinations from "./pages/Destinations";
+import Experiences from "./pages/Experiences";
+import About from "./pages/About";
+import Plan from "./pages/Plan";
 
 function App() {
   return (
-    <div className="page">
-      <nav>
-        <div className="logo">WANDERLY</div>
+    <div className="app">
+      <Navbar />
 
-       <div className="links">
-  <a href="#discover">Discover</a>
-  <a href="#destinations">Destinations</a>
-  <a href="#about">About</a>
-</div>
-      </nav>
+      <main>
+        <Routes>
+          <Route
+  path="/destinations/:id"
+  element={<DestinationDetails />}
+/>
+<Route
+  path="/experiences/:id"
+  element={<ExperienceDetails />}
+/>
+          <Route path="/" element={<Home />} />
+          <Route path="/destinations" element={<Destinations />} />
+          <Route path="/experiences" element={<Experiences />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/plan" element={<Plan />} />
+        </Routes>
+      </main>
 
-      <section className="hero" id="discover">
-        <div className="hero-text">
-          <p className="location">📍 Dolomites, Italy</p>
-
-          <h1>
-            The world
-            <br />
-            is waiting.
-          </h1>
-
-          <p className="description">
-            Discover breathtaking places and unforgettable journeys
-            from every corner of the world.
-          </p>
-
-          <button>Explore destinations →</button>
-        </div>
-      </section>
-
-     <Destinations /> 
-     <About />
-    <footer>
-  <div className="footer-logo">WANDERLY</div>
-
-  <div className="footer-text">
-    © 2026 Wanderly. Explore more.
-  </div>
-</footer>
-
+      <Footer />
     </div>
   );
 }

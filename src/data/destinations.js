@@ -1,42 +1,70 @@
 export const destinations = [
-  {
-    id: 1,
-    country: "Japan",
-    city: "Kyoto",
-    tag: "Asia",
-    image:
-      "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=1200&q=85",
-  },
-  {
-    id: 2,
-    country: "Switzerland",
-    city: "Swiss Alps",
-    tag: "Europe",
-    image:
-      "https://images.unsplash.com/photo-1531366936337-7c912a4589a7?auto=format&fit=crop&w=1200&q=85",
-  },
+ {
+  id: 1,
+  country: "Sri Lanka",
+  city: "Ella",
+  region: "Indian Ocean",
+  tag: "Mountains",
+  description:
+    "Misty mountains, endless tea fields and one of South Asia's most beautiful train journeys.",
+  image: "/images/destinations/ella.jpg",
+},
+
+ {
+  id: 2,
+  country: "Sri Lanka",
+  city: "Sigiriya",
+  region: "Cultural Triangle",
+  tag: "Heritage",
+  description:
+    "An ancient rock fortress rising above the tropical jungle.",
+  image: "/images/destinations/sigiriya.jpg",
+},
+
   {
     id: 3,
-    country: "Indonesia",
-    city: "Bali",
-    tag: "Asia",
+    country: "Maldives",
+    city: "Baa Atoll",
+    region: "Indian Ocean",
+    tag: "Island Escape",
+    description:
+      "Turquoise lagoons, coral reefs and quiet island mornings.",
     image:
-      "https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=1200&q=85",
+      "https://images.unsplash.com/photo-1512100356356-de1b84283e18?auto=format&fit=crop&w=1400&q=85",
   },
+
   {
     id: 4,
-    country: "Maldives",
-    city: "North Malé Atoll",
-    tag: "Indian Ocean",
+    country: "Nepal",
+    city: "Pokhara",
+    region: "Himalayas",
+    tag: "Adventure",
+    description:
+      "A peaceful lakeside city surrounded by the dramatic Himalayas.",
     image:
-      "https://images.unsplash.com/photo-1512100356356-de1b84283e18?auto=format&fit=crop&w=1200&q=85",
+      "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=1400&q=85",
   },
+
   {
     id: 5,
-    country: "Iceland",
-    city: "Reykjavík",
-    tag: "Nordic",
+    country: "India",
+    city: "Kerala",
+    region: "South India",
+    tag: "Slow Travel",
+    description:
+      "Palm-lined backwaters, spice plantations and tropical villages.",
     image:
-      "https://images.unsplash.com/photo-1504893524553-b855bce32c67?auto=format&fit=crop&w=1200&q=85",
+      "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=1400&q=85",
   },
+
+ {
+  id: 6,
+  country: "Bhutan",
+  city: "Paro",
+  region: "Himalayas",
+  tag: "Culture",
+  description:
+    "Sacred monasteries, mountain valleys and a culture unlike anywhere else.",
+  image: "/images/destinations/paro.jpg",
+},
 ];
