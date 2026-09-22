@@ -282,3 +282,114 @@ button:hover {
     grid-row: auto;
   }
 }
+
+/* 
+   RESPONSIVE DESIGN
+ */
+
+@media (max-width: 900px) {
+  nav {
+    padding: 25px 30px;
+  }
+
+  .links {
+    gap: 20px;
+  }
+
+  .hero {
+    padding: 70px 30px;
+  }
+
+  h1 {
+    font-size: clamp(55px, 11vw, 90px);
+  }
+
+  .section-heading {
+    gap: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  nav {
+    padding: 22px 20px;
+  }
+
+  .logo {
+    font-size: 18px;
+    letter-spacing: 4px;
+  }
+
+  .links {
+    display: none;
+  }
+
+  .hero {
+    min-height: 90vh;
+    padding: 40px 20px 60px;
+    align-items: flex-end;
+    background-position: center;
+  }
+
+  .location {
+    font-size: 13px;
+  }
+
+  h1 {
+    font-size: clamp(52px, 16vw, 78px);
+    letter-spacing: -3px;
+    line-height: 0.92;
+  }
+
+  .description {
+    max-width: 320px;
+    font-size: 13px;
+  }
+
+  .hero button {
+    padding: 14px 22px;
+  }
+
+  .destinations-section {
+    padding: 80px 20px;
+  }
+
+  .section-heading {
+    margin-bottom: 45px;
+  }
+
+  .section-heading h2 {
+    font-size: clamp(42px, 12vw, 65px);
+    letter-spacing: -3px;
+  }
+
+  .section-description {
+    font-size: 13px;
+  }
+
+  .destination-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .destination-card,
+  .destination-card.large {
+    height: 430px;
+    grid-row: auto;
+  }
+
+  .card-content {
+    left: 22px;
+    right: 22px;
+    bottom: 22px;
+  }
+
+  .card-top {
+    top: 20px;
+    left: 20px;
+    right: 20px;
+  }
+
+  .card-content h3 {
+    font-size: 42px;
+  }
+}
